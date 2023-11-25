@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "37f5d6d7-a976-45d9-a1c4-b0a958ac0307",
+		"name": "MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19006206"
+	},
+	"item": [
+		{
+			"name": "CRUD",
+			"item": [
+				{
+					"name": "createHeroes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"batman\",\r\n    \"age\": 35,\r\n    \"superpower\": \"money\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/heroes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"heroes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getHeroes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/heroes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"heroes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getHeroe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/heroes/BATMAN",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"heroes",
+								"BATMAN"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateHeroe",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"age\": 40,\r\n    \"superpower\": \"money\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/heroes/BATMAN",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"heroes",
+								"BATMAN"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteHeroe",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/heroes/BATMAN",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"heroes",
+								"BATMAN"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
